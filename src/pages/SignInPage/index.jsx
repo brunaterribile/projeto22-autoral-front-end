@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../../assets/images/icone-sem-fundo.png'
+import logo from '../../assets/images/logo1.png'
 import { FormBar, SignInContainer } from './styled'
 
 export default function SignIn() {

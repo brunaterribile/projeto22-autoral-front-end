@@ -1,5 +1,5 @@
 import { FormBar, SignUpContainer } from '../SignUpPage/styled'
-import logo from '../../assets/images/icone-sem-fundo.png'
+import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'
 
 export default function SignUp() {
