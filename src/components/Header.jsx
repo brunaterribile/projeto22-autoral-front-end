@@ -2,11 +2,15 @@ import { styled } from "styled-components"
 import smallLogo from '../assets/images/logo2.png'
 import logOut from '../assets/icons/sair.png'
 import options from '../assets/icons/opções.png'
+import { useContext } from "react"
+import { UserContext } from "../contexts/UserContext"
 
 export default function Header(){
+    const { setShowSideBar } = useContext(UserContext)
+
     return (
         <Head>
-            <img className="icon" src={options} alt="options"/>
+            <img className="icon" src={options} alt="options" onClick={setShowSideBar(true)}/>
             <img src={smallLogo} alt="logo"/>
             <img className="icon" src={logOut} alt="logout"/>
         </Head>
